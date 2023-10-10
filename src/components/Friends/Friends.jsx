@@ -7,7 +7,14 @@ export const Friends = ({ friends }) => (
     ))}
   </ul>
 );
-//
+const FriendsItem = ({ id, name, avatar, isOnline }) => (
+  <li class="item" key={id}>
+    <span class="status">{isOnline}</span>
+    <img class="avatar" src={avatar} alt="User avatar" width="48" />
+    <p class="name">{name}</p>
+  </li>
+);
+
 Friends.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
@@ -18,10 +25,3 @@ Friends.propTypes = {
     })
   ),
 };
-const FriendsItem = ({ id, name, avatar, isOnline }) => (
-  <li class="item" key={id}>
-    <span class="status">{isOnline}</span>
-    <img class="avatar" src={avatar} alt="User avatar" width="48" />
-    <p class="name">{name}</p>
-  </li>
-);
