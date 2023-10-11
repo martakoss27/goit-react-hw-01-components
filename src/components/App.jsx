@@ -26,7 +26,7 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={data} />
-      <Friends friends={friends} />;
+      <Friends friends={friends} />
     </div>
   );
 };

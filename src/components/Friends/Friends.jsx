@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { FriendsItem } from './FriendsItem/FriendsItem';
 
 export const Friends = ({ friends }) => (
   <ul class="friend-list">
@@ -6,13 +7,6 @@ export const Friends = ({ friends }) => (
       <FriendsItem key={id} avatar={avatar} name={name} isOnline={isOnline} />
     ))}
   </ul>
-);
-const FriendsItem = ({ id, name, avatar, isOnline }) => (
-  <li class="item" key={id}>
-    <span class="status">{isOnline}</span>
-    <img class="avatar" src={avatar} alt="User avatar" width="48" />
-    <p class="name">{name}</p>
-  </li>
 );
 
 Friends.propTypes = {
