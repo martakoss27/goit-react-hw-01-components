@@ -1,0 +1,19 @@
+.item {
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 10px 8px 24px 0px rgba(0, 0, 0, 0.28);
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  width: 350px;
+  margin: 20px 0px;
+}
+.online {
+  color: green;
+  margin-right: 10px;
+}
+.offline {
+  color: red;
+  margin-right: 10px;
+  display: none;
+}
