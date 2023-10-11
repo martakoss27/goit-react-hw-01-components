@@ -8,12 +8,18 @@
   width: 350px;
   margin: 20px 0px;
 }
-.online {
-  color: green;
+.status {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
   margin-right: 10px;
 }
+.online {
+  composes: status;
+  background-color: green;
+}
 .offline {
-  color: red;
-  margin-right: 10px;
-  display: none;
+  composes: status;
+  background-color: red;
 }
