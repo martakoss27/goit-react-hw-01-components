@@ -1,11 +1,11 @@
 .item {
-  border: 1px solid black;
+  border: 3px solid black;
   border-radius: 5px;
   box-shadow: 10px 8px 24px 0px rgba(0, 0, 0, 0.28);
   display: flex;
   padding: 10px;
   align-items: center;
-  width: 350px;
+  width: 250px;
   margin: 20px 0px;
 }
 .status {
@@ -22,4 +22,10 @@
 .offline {
   composes: status;
   background-color: red;
+}
+.avatar {
+  padding: 0 20px;
+}
+.name {
+  font-weight: 500;
 }
