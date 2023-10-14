@@ -1,7 +1,7 @@
 import { Profile } from './Profile/Profile';
 import { Statistics } from './Statistics/Statistics';
 import { Friends } from './Friends/Friends';
-import { TransactionHistory } from './Transaction/Transaction';
+import { TransactionHistory } from './Transactions/Transactions';
 
 import user from '../data/user.json';
 import data from '../data/data.json';
@@ -12,7 +12,7 @@ export const App = () => {
   return (
     <div
       style={{
-        //height: '100vh',
+        height: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
